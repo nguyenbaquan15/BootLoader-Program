@@ -1,0 +1,349 @@
+###############################################################################
+#
+# IAR ELF Linker V9.10.1.308/W64 for ARM                  07/Apr/2021  13:46:41
+# Copyright 2007-2021 IAR Systems AB.
+#
+#    Output file  =
+#        C:\Users\quan\Desktop\Fresher FPT\2.Embedded\3.Assignment\Mock
+#        Project\QuanNB1_ Mock 2\QuanNB1_ Mock
+#        2\project\Debug\Exe\MockProject.out
+#    Map file     =
+#        C:\Users\quan\Desktop\Fresher FPT\2.Embedded\3.Assignment\Mock
+#        Project\QuanNB1_ Mock 2\QuanNB1_ Mock
+#        2\project\Debug\List\MockProject.map
+#    Command line =
+#        -f "C:\Users\quan\Desktop\Fresher FPT\2.Embedded\3.Assignment\Mock
+#        Project\QuanNB1_ Mock 2\QuanNB1_ Mock
+#        2\project\Debug\Exe\MockProject.out.rsp"
+#        ("C:\Users\quan\Desktop\Fresher FPT\2.Embedded\3.Assignment\Mock
+#        Project\QuanNB1_ Mock 2\QuanNB1_ Mock
+#        2\project\Debug\Obj\source\App.o" "C:\Users\quan\Desktop\Fresher
+#        FPT\2.Embedded\3.Assignment\Mock Project\QuanNB1_ Mock 2\QuanNB1_ Mock
+#        2\project\Debug\Obj\source\Boot.o" "C:\Users\quan\Desktop\Fresher
+#        FPT\2.Embedded\3.Assignment\Mock Project\QuanNB1_ Mock 2\QuanNB1_ Mock
+#        2\project\Debug\Obj\source\Flash.o" "C:\Users\quan\Desktop\Fresher
+#        FPT\2.Embedded\3.Assignment\Mock Project\QuanNB1_ Mock 2\QuanNB1_ Mock
+#        2\project\Debug\Obj\source\Gpio.o" "C:\Users\quan\Desktop\Fresher
+#        FPT\2.Embedded\3.Assignment\Mock Project\QuanNB1_ Mock 2\QuanNB1_ Mock
+#        2\project\Debug\Obj\source\Queue.o" "C:\Users\quan\Desktop\Fresher
+#        FPT\2.Embedded\3.Assignment\Mock Project\QuanNB1_ Mock 2\QuanNB1_ Mock
+#        2\project\Debug\Obj\source\Srec.o" "C:\Users\quan\Desktop\Fresher
+#        FPT\2.Embedded\3.Assignment\Mock Project\QuanNB1_ Mock 2\QuanNB1_ Mock
+#        2\project\Debug\Obj\startup\startup_MKL46Z4.o"
+#        "C:\Users\quan\Desktop\Fresher FPT\2.Embedded\3.Assignment\Mock
+#        Project\QuanNB1_ Mock 2\QuanNB1_ Mock
+#        2\project\Debug\Obj\startup\system_MKL46Z4.o"
+#        "C:\Users\quan\Desktop\Fresher FPT\2.Embedded\3.Assignment\Mock
+#        Project\QuanNB1_ Mock 2\QuanNB1_ Mock
+#        2\project\Debug\Obj\source\Uart.o" --no_out_extension -o
+#        "C:\Users\quan\Desktop\Fresher FPT\2.Embedded\3.Assignment\Mock
+#        Project\QuanNB1_ Mock 2\QuanNB1_ Mock
+#        2\project\Debug\Exe\MockProject.out" --map
+#        "C:\Users\quan\Desktop\Fresher FPT\2.Embedded\3.Assignment\Mock
+#        Project\QuanNB1_ Mock 2\QuanNB1_ Mock
+#        2\project\Debug\List\MockProject.map" --config "C:\Program Files\IAR
+#        Systems\Embedded Workbench
+#        9.0\arm\config\linker\NXP\MKL46Z256xxx4.icf" --semihosting --entry
+#        __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because some modules are built with
+size limitations (and not runtime checking), and --advanced_heap
+was not specified.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x0 { ro section .intvec };
+"P1":  place in [from 0x0 to 0x3ff] |
+                [from 0x410 to 0x3'ffff] { ro };
+define block CSTACK with size = 2K, alignment = 8 { };
+define block HEAP with size = 4K, alignment = 8 { };
+"P3":  place in [from 0x1fff'e000 to 0x1fff'ffff] |
+                [from 0x2000'0000 to 0x2000'5fff] {
+          rw, block CSTACK, block HEAP };
+"P5":  place in [from 0x400 to 0x40f] { section FlashConfig };
+
+No sections matched the following patterns:
+
+  ro section application_specific_ro  in "P2|P4"
+  rw section application_specific_rw  in "P2|P4"
+
+
+  Section          Kind         Address   Size  Object
+  -------          ----         -------   ----  ------
+"A0":                                     0xc0
+  .intvec          ro code          0x0   0xc0  startup_MKL46Z4.o [2]
+                                 - 0xc0   0xc0
+
+"P1", part 1 of 2:                       0x248
+  .text            ro code         0xc0  0x194  Flash.o [1]
+  .text            ro code        0x254   0xae  I32DivModFast.o [4]
+  .text            ro code        0x302    0x2  startup_MKL46Z4.o [2]
+  .text            ro code        0x304    0x2  IntDivZer.o [4]
+  .text            ro code        0x306    0x2  startup_MKL46Z4.o [2]
+                                - 0x308  0x248
+
+"P5":                                     0x10
+  FlashConfig      ro code        0x400   0x10  startup_MKL46Z4.o [2]
+                                - 0x410   0x10
+
+"P1", part 2 of 2:                       0xf46
+  .text            ro code        0x410  0x2f4  Srec.o [1]
+  .text            ro code        0x704  0x2b8  Uart.o [1]
+  .text            ro code        0x9bc  0x244  Boot.o [1]
+  .text            ro code        0xc00  0x11c  Queue.o [1]
+  .text            ro code        0xd1c   0x34  ABImemcpy.o [4]
+  .text            ro code        0xd50   0xc0  strcmp.o [4]
+  .text            ro code        0xe10   0xf0  Gpio.o [1]
+  .text            ro code        0xf00   0x54  App.o [1]
+  .rodata          const          0xf54   0x44  Boot.o [1]
+  .rodata          const          0xf98   0x3c  Boot.o [1]
+  .rodata          const          0xfd4   0x3c  Boot.o [1]
+  .text            ro code       0x1010   0x3c  zero_init3.o [4]
+  .rodata          const         0x104c   0x38  Boot.o [1]
+  .rodata          const         0x1084   0x2c  Boot.o [1]
+  .rodata          const         0x10b0   0x28  Boot.o [1]
+  .rodata          const         0x10d8   0x28  Boot.o [1]
+  .rodata          const         0x1100   0x28  Boot.o [1]
+  .text            ro code       0x1128   0x28  data_init.o [4]
+  .rodata          const         0x1150   0x24  Boot.o [1]
+  .text            ro code       0x1174   0x24  startup_MKL46Z4.o [2]
+  .iar.init_table  const         0x1198   0x10  - Linker created -
+  .rodata          const         0x11a8   0x20  Boot.o [1]
+  .text            ro code       0x11c8   0x1e  cmain.o [4]
+  .text            ro code       0x11e6    0x4  low_level_init.o [3]
+  .text            ro code       0x11ea    0x8  exit.o [3]
+  .text            ro code       0x11f2    0x2  startup_MKL46Z4.o [2]
+  .text            ro code       0x11f4    0xa  cexit.o [4]
+  .text            ro code       0x11fe    0x2  startup_MKL46Z4.o [2]
+  .text            ro code       0x1200   0x14  exit.o [5]
+  .rodata          const         0x1214   0x1c  Boot.o [1]
+  .rodata          const         0x1230   0x1c  Boot.o [1]
+  .text            ro code       0x124c   0x1c  cstartup_M.o [4]
+  .rodata          const         0x1268   0x18  Boot.o [1]
+  .rodata          const         0x1280   0x14  Boot.o [1]
+  .rodata          const         0x1294   0x14  Boot.o [1]
+  .rodata          const         0x12a8   0x14  Boot.o [1]
+  .rodata          const         0x12bc   0x10  Boot.o [1]
+  .rodata          const         0x12cc    0xc  Uart.o [1]
+  .text            ro code       0x12d8    0xc  system_MKL46Z4.o [2]
+  .rodata          const         0x12e4    0x8  Boot.o [1]
+  .rodata          const         0x12ec    0x8  Boot.o [1]
+  .text            ro code       0x12f4    0x8  startup_MKL46Z4.o [2]
+  .text            ro code       0x12fc    0x8  startup_MKL46Z4.o [2]
+  .text            ro code       0x1304    0x8  startup_MKL46Z4.o [2]
+  .text            ro code       0x130c    0x8  startup_MKL46Z4.o [2]
+  .text            ro code       0x1314    0x8  startup_MKL46Z4.o [2]
+  .text            ro code       0x131c    0x8  startup_MKL46Z4.o [2]
+  .text            ro code       0x1324    0x8  startup_MKL46Z4.o [2]
+  .text            ro code       0x132c    0x8  startup_MKL46Z4.o [2]
+  .text            ro code       0x1334    0x8  startup_MKL46Z4.o [2]
+  .text            ro code       0x133c    0x8  startup_MKL46Z4.o [2]
+  .text            ro code       0x1344    0x8  startup_MKL46Z4.o [2]
+  .text            ro code       0x134c    0x8  startup_MKL46Z4.o [2]
+  .text            ro code       0x1354    0x2  startup_MKL46Z4.o [2]
+  .rodata          const         0x1356    0x0  zero_init3.o [4]
+                               - 0x1356  0xf46
+
+"P3", part 1 of 2:                       0x150
+  .bss             zero     0x1fff'e000  0x144  Queue.o [1]
+  .bss             zero     0x1fff'e144    0x4  Uart.o [1]
+  .bss             zero     0x1fff'e148    0x2  Srec.o [1]
+  .bss             zero     0x1fff'e14a    0x2  Srec.o [1]
+  .bss             zero     0x1fff'e14c    0x1  Queue.o [1]
+  .bss             zero     0x1fff'e14d    0x1  Queue.o [1]
+  .bss             zero     0x1fff'e14e    0x1  Queue.o [1]
+  .bss             zero     0x1fff'e14f    0x1  Queue.o [1]
+                          - 0x1fff'e150  0x150
+
+"P3", part 2 of 2:                       0x800
+  CSTACK                    0x1fff'e150  0x800  <Block>
+    CSTACK         uninit   0x1fff'e150  0x800  <Block tail>
+                          - 0x1fff'e950  0x800
+
+Unused ranges:
+
+         From           To      Size
+         ----           --      ----
+        0x308        0x3ff      0xf8
+       0x1356     0x3'ffff  0x3'ecaa
+  0x1fff'e950  0x1fff'ffff    0x16b0
+  0x2000'0000  0x2000'5fff    0x6000
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x150:
+          0x1fff'e000  0x150
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module             ro code  ro data  rw data
+    ------             -------  -------  -------
+command line/config:
+    --------------------------------------------
+    Total:
+
+C:\Users\quan\Desktop\Fresher FPT\2.Embedded\3.Assignment\Mock Project\QuanNB1_ Mock 2\QuanNB1_ Mock 2\project\Debug\Obj\source: [1]
+    App.o                   84
+    Boot.o                 580      648
+    Flash.o                404
+    Gpio.o                 240
+    Queue.o                284               328
+    Srec.o                 756                 4
+    Uart.o                 696       12        4
+    --------------------------------------------
+    Total:               3'044      660      336
+
+C:\Users\quan\Desktop\Fresher FPT\2.Embedded\3.Assignment\Mock Project\QuanNB1_ Mock 2\QuanNB1_ Mock 2\project\Debug\Obj\startup: [2]
+    startup_MKL46Z4.o      350
+    system_MKL46Z4.o        12
+    --------------------------------------------
+    Total:                 362
+
+dl6M_tln.a: [3]
+    exit.o                   8
+    low_level_init.o         4
+    --------------------------------------------
+    Total:                  12
+
+rt6M_tl.a: [4]
+    ABImemcpy.o             52
+    I32DivModFast.o        174
+    IntDivZer.o              2
+    cexit.o                 10
+    cmain.o                 30
+    cstartup_M.o            28
+    data_init.o             40
+    strcmp.o               192
+    zero_init3.o            60
+    --------------------------------------------
+    Total:                 588
+
+shb_l.a: [5]
+    exit.o                  20
+    --------------------------------------------
+    Total:                  20
+
+    Linker created                   16    2'048
+------------------------------------------------
+    Grand Total:         4'026      676    2'384
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address   Size  Type      Object
+-----                       -------   ----  ----      ------
+.iar.init_table$$Base        0x1198          --   Gb  - Linker created -
+.iar.init_table$$Limit       0x11a8          --   Gb  - Linker created -
+?main                        0x11c9         Code  Gb  cmain.o [4]
+BaudrateAuto                  0x845   0xda  Code  Lc  Uart.o [1]
+BootRunApplication            0xad3   0x22  Code  Gb  Boot.o [1]
+BootRunBootLoader             0x9d9   0xfa  Code  Gb  Boot.o [1]
+CSTACK$$Base            0x1fff'e150          --   Gb  - Linker created -
+CSTACK$$Limit           0x1fff'e950          --   Gb  - Linker created -
+CallBackQueuePush       0x1fff'e144    0x4  Data  Gb  Uart.o [1]
+CheckByteCount                0x411   0x44  Code  Lc  Srec.o [1]
+CheckDataLineCount            0x49f   0xa2  Code  Lc  Srec.o [1]
+CheckDataLineCount::LineCount
+                        0x1fff'e14a    0x2  Data  Lc  Srec.o [1]
+CheckDataLineCount::ValueDataLineCount
+                        0x1fff'e148    0x2  Data  Lc  Srec.o [1]
+CheckFileSrec                 0x59b   0x42  Code  Gb  Srec.o [1]
+CheckSum                      0x455   0x4a  Code  Lc  Srec.o [1]
+CheckUserChoose               0xaf5   0xa6  Code  Lc  Boot.o [1]
+Count                   0x1fff'e14e    0x1  Data  Gb  Queue.o [1]
+FlashEraseMultiSector         0x15b   0x2e  Code  Gb  Flash.o [1]
+FlashEraseSector               0xdd   0x7e  Code  Gb  Flash.o [1]
+FlashProgramLongword          0x189   0x9e  Code  Gb  Flash.o [1]
+Front                   0x1fff'e14c    0x1  Data  Gb  Queue.o [1]
+GPIO_Init                     0xe11   0x88  Code  Gb  Gpio.o [1]
+HexaConvert                   0x549   0x16  Code  Lc  Srec.o [1]
+HexaConvertDec                0x55f   0x3c  Code  Lc  Srec.o [1]
+NVIC_DisableIRQ               0x9cb    0xe  Code  Lc  Boot.o [1]
+NVIC_DisableIRQ                0xcf    0xe  Code  Lc  Flash.o [1]
+NVIC_EnableIRQ                0xf01    0xe  Code  Lc  App.o [1]
+NVIC_EnableIRQ                0x9bd    0xe  Code  Lc  Boot.o [1]
+NVIC_EnableIRQ                 0xc1    0xe  Code  Lc  Flash.o [1]
+Queue                   0x1fff'e000  0x144  Data  Gb  Queue.o [1]
+Queue_Init                    0xc01   0x14  Code  Gb  Queue.o [1]
+Queue_Peek                    0xc91   0x24  Code  Gb  Queue.o [1]
+Queue_Pop                     0xcb5   0x38  Code  Gb  Queue.o [1]
+Queue_Push                    0xc15   0x7c  Code  Gb  Queue.o [1]
+Queue_Push::index       0x1fff'e14f    0x1  Data  Lc  Queue.o [1]
+Queue_Status                  0xced   0x1c  Code  Gb  Queue.o [1]
+Rear                    0x1fff'e14d    0x1  Data  Gb  Queue.o [1]
+Region$$Table$$Base          0x1198          --   Gb  - Linker created -
+Region$$Table$$Limit         0x11a8          --   Gb  - Linker created -
+SwitchInit                    0xe99   0x42  Code  Gb  Gpio.o [1]
+SystemInit                   0x12d9    0x8  Code  Gb  system_MKL46Z4.o [2]
+UART0_ClockApp                0x82b   0x1a  Code  Gb  Uart.o [1]
+UART0_ClockUpdate             0x811   0x1a  Code  Gb  Uart.o [1]
+UART0_IRQHandler              0x94b   0x32  Code  Gb  Uart.o [1]
+UART0_PutString               0x91f   0x26  Code  Gb  Uart.o [1]
+UARTCallPushQueue             0x945    0x6  Code  Gb  Uart.o [1]
+UART_Init                     0x705  0x10c  Code  Gb  Uart.o [1]
+WriteSrecToFlash              0x5dd  0x128  Code  Gb  Srec.o [1]
+__Vectors                       0x0          --   Gb  startup_MKL46Z4.o [2]
+__Vectors_End                  0xc0         Data  Gb  startup_MKL46Z4.o [2]
+__Vectors_Size {Abs}           0xc0          --   Gb  startup_MKL46Z4.o [2]
+__aeabi_idiv0                 0x305         Code  Gb  IntDivZer.o [4]
+__aeabi_memcpy4               0xd1d         Code  Gb  ABImemcpy.o [4]
+__aeabi_memcpy8               0xd1d         Code  Gb  ABImemcpy.o [4]
+__aeabi_uidiv                 0x255         Code  Gb  I32DivModFast.o [4]
+__aeabi_uidivmod              0x255         Code  Gb  I32DivModFast.o [4]
+__cmain                      0x11c9         Code  Gb  cmain.o [4]
+__exit                       0x1201   0x14  Code  Gb  exit.o [5]
+__iar_data_init3             0x1129   0x28  Code  Gb  data_init.o [4]
+__iar_program_start          0x124d         Code  Gb  cstartup_M.o [4]
+__iar_zero_init3             0x1011   0x3c  Code  Gb  zero_init3.o [4]
+__low_level_init             0x11e7    0x4  Code  Gb  low_level_init.o [3]
+__vector_table                  0x0         Data  Gb  startup_MKL46Z4.o [2]
+__vector_table_0x1c            0x1c         Data  Gb  startup_MKL46Z4.o [2]
+_call_main                   0x11d5         Code  Gb  cmain.o [4]
+_exit                        0x11f5         Code  Gb  cexit.o [4]
+exit                         0x11eb    0x8  Code  Gb  exit.o [3]
+main                          0xf0f   0x3a  Code  Gb  App.o [1]
+strcmp                        0xd61         Code  Gb  strcmp.o [4]
+
+
+[1] = C:\Users\quan\Desktop\Fresher FPT\2.Embedded\3.Assignment\Mock Project\QuanNB1_ Mock 2\QuanNB1_ Mock 2\project\Debug\Obj\source
+[2] = C:\Users\quan\Desktop\Fresher FPT\2.Embedded\3.Assignment\Mock Project\QuanNB1_ Mock 2\QuanNB1_ Mock 2\project\Debug\Obj\startup
+[3] = dl6M_tln.a
+[4] = rt6M_tl.a
+[5] = shb_l.a
+
+  4'026 bytes of readonly  code memory
+    676 bytes of readonly  data memory
+  2'384 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

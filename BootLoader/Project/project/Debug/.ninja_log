@@ -1,0 +1,25 @@
+# ninja log v5
+1	1140	6387734542074135	C:/Users/quan/Desktop/Mock project/project/Debug/Obj/startup/startup_MKL46Z4.o	e789ff21624198ac
+424	575	6390631761237283	C:/Users/quan/Desktop/Mock project/project/Debug/Obj/source/Queue.o	9637302a5e375c0b
+546	714	6390631762917379	C:/Users/quan/Desktop/Mock project/project/Debug/Obj/source/Srec.o	e010df05940449ba
+672	942	6390607803706990	C:/Users/quan/Desktop/Mock project/project/Debug/Obj/source/Flash.o	2f2d3475c91ea162
+758	987	6390607803967005	C:/Users/quan/Desktop/Mock project/project/Debug/Obj/source/Gpio.o	3e4b7b50ad2c57f7
+389	641	6390708183099253	C:/Users/quan/Desktop/Mock project/project/Debug/Obj/source/Uart.o	9696874f5798207d
+194	310	6390697666247723	C:/Users/quan/Desktop/Mock project/project/Debug/Exe/MockProject.out	6cdca69006769804
+1944	2167	6387734552114710	C:/Users/quan/Desktop/Mock project/project/Debug/Obj/startup/system_MKL46Z4.o	634ab0ff0ad5503e
+2	181	6390697664937649	C:/Users/quan/Desktop/Mock project/project/Debug/Obj/source/App.o	7383964772df39e7
+21	577	6390708182439215	C:/Users/quan/Desktop/Mock project/project/Debug/Obj/source/Boot.o	edc09159726c8721
+3	175	6390708237422360	C:/Users/quan/Desktop/Mock project/project/Debug/Obj/source/App.o	7383964772df39e7
+182	289	6390708238582426	C:/Users/quan/Desktop/Mock project/project/Debug/Exe/MockProject.out	6cdca69006769804
+3	197	6390708305896277	C:/Users/quan/Desktop/Mock project/project/Debug/Obj/source/App.o	7383964772df39e7
+203	309	6390708307016341	C:/Users/quan/Desktop/Mock project/project/Debug/Exe/MockProject.out	6cdca69006769804
+15	120	6394811994322885	C:/Users/quan/Desktop/Fresher FPT/2.Embedded/3.Assignment/Mock Project/QuanNB1_ Mock 2/QuanNB1_ Mock 2/project/Debug/Obj/startup/startup_MKL46Z4.o	d7e94c08da8e67a1
+39	800	6394812000973265	C:/Users/quan/Desktop/Fresher FPT/2.Embedded/3.Assignment/Mock Project/QuanNB1_ Mock 2/QuanNB1_ Mock 2/project/Debug/Obj/source/App.o	78d688d7eb430f19
+125	847	6394812001153275	C:/Users/quan/Desktop/Fresher FPT/2.Embedded/3.Assignment/Mock Project/QuanNB1_ Mock 2/QuanNB1_ Mock 2/project/Debug/Obj/source/Boot.o	1dc1217d409d81c8
+810	1071	6394812003743423	C:/Users/quan/Desktop/Fresher FPT/2.Embedded/3.Assignment/Mock Project/QuanNB1_ Mock 2/QuanNB1_ Mock 2/project/Debug/Obj/source/Flash.o	b55637e395652636
+858	1112	6394812003863430	C:/Users/quan/Desktop/Fresher FPT/2.Embedded/3.Assignment/Mock Project/QuanNB1_ Mock 2/QuanNB1_ Mock 2/project/Debug/Obj/source/Gpio.o	9bdea7cf31e03135
+1081	1223	6394812005273511	C:/Users/quan/Desktop/Fresher FPT/2.Embedded/3.Assignment/Mock Project/QuanNB1_ Mock 2/QuanNB1_ Mock 2/project/Debug/Obj/source/Queue.o	efcb60cc837c59b4
+1123	1362	6394812006663590	C:/Users/quan/Desktop/Fresher FPT/2.Embedded/3.Assignment/Mock Project/QuanNB1_ Mock 2/QuanNB1_ Mock 2/project/Debug/Obj/source/Srec.o	d3306d438567cd8c
+1232	1553	6394812008543698	C:/Users/quan/Desktop/Fresher FPT/2.Embedded/3.Assignment/Mock Project/QuanNB1_ Mock 2/QuanNB1_ Mock 2/project/Debug/Obj/source/Uart.o	d8a1df33fc83031f
+1371	1632	6394812009353744	C:/Users/quan/Desktop/Fresher FPT/2.Embedded/3.Assignment/Mock Project/QuanNB1_ Mock 2/QuanNB1_ Mock 2/project/Debug/Obj/startup/system_MKL46Z4.o	cae95a5a50b4d66d
+1642	1838	6394812011423863	C:/Users/quan/Desktop/Fresher FPT/2.Embedded/3.Assignment/Mock Project/QuanNB1_ Mock 2/QuanNB1_ Mock 2/project/Debug/Exe/MockProject.out	b8d4e9fba754ff07

@@ -1,0 +1,15 @@
+# ninja log v5
+39	244	6394812010000000	C:/Users/quan/Desktop/Fresher FPT/2.Embedded/3.Assignment/Mock Project/QuanNB1_ Mock 2/QuanNB1_ Mock 2/project/Debug/BrowseInfo/source/App.xcl	38149be95116dcd0
+66	334	6394812010000000	C:/Users/quan/Desktop/Fresher FPT/2.Embedded/3.Assignment/Mock Project/QuanNB1_ Mock 2/QuanNB1_ Mock 2/project/Debug/BrowseInfo/source/Boot.xcl	e386ec3a7da4e7eb
+256	405	6394812010000000	C:/Users/quan/Desktop/Fresher FPT/2.Embedded/3.Assignment/Mock Project/QuanNB1_ Mock 2/QuanNB1_ Mock 2/project/Debug/BrowseInfo/source/Flash.xcl	5e1bd55c690ef143
+343	501	6394812020000000	C:/Users/quan/Desktop/Fresher FPT/2.Embedded/3.Assignment/Mock Project/QuanNB1_ Mock 2/QuanNB1_ Mock 2/project/Debug/BrowseInfo/source/Gpio.xcl	a70e71bd6969cddd
+414	581	6394812020000000	C:/Users/quan/Desktop/Fresher FPT/2.Embedded/3.Assignment/Mock Project/QuanNB1_ Mock 2/QuanNB1_ Mock 2/project/Debug/BrowseInfo/source/Queue.xcl	a742a046e95d7873
+510	670	6394812020000000	C:/Users/quan/Desktop/Fresher FPT/2.Embedded/3.Assignment/Mock Project/QuanNB1_ Mock 2/QuanNB1_ Mock 2/project/Debug/BrowseInfo/source/Srec.xcl	c13e638dcb7816a2
+591	753	6394812020000000	C:/Users/quan/Desktop/Fresher FPT/2.Embedded/3.Assignment/Mock Project/QuanNB1_ Mock 2/QuanNB1_ Mock 2/project/Debug/BrowseInfo/source/Uart.xcl	39760e4b918e768f
+680	835	6394812020000000	C:/Users/quan/Desktop/Fresher FPT/2.Embedded/3.Assignment/Mock Project/QuanNB1_ Mock 2/QuanNB1_ Mock 2/project/Debug/BrowseInfo/startup/system_MKL46Z4.xcl	67ebd42b9f7e3b48
+4	252	6394812077327632	C:/Users/quan/Desktop/Fresher FPT/2.Embedded/3.Assignment/Mock Project/QuanNB1_ Mock 2/QuanNB1_ Mock 2/project/Debug/BrowseInfo/source/App.pbi	19aabd41dfa0ad40
+19	276	6394812077347633	C:/Users/quan/Desktop/Fresher FPT/2.Embedded/3.Assignment/Mock Project/QuanNB1_ Mock 2/QuanNB1_ Mock 2/project/Debug/BrowseInfo/source/Boot.pbi	f4487514f2854c57
+257	511	6394812079887779	C:/Users/quan/Desktop/Fresher FPT/2.Embedded/3.Assignment/Mock Project/QuanNB1_ Mock 2/QuanNB1_ Mock 2/project/Debug/BrowseInfo/source/Flash.pbi	b789338ee816e036
+281	536	6394812079917780	C:/Users/quan/Desktop/Fresher FPT/2.Embedded/3.Assignment/Mock Project/QuanNB1_ Mock 2/QuanNB1_ Mock 2/project/Debug/BrowseInfo/source/Gpio.pbi	ac5e75a273e52590
+516	646	6394812081257857	C:/Users/quan/Desktop/Fresher FPT/2.Embedded/3.Assignment/Mock Project/QuanNB1_ Mock 2/QuanNB1_ Mock 2/project/Debug/BrowseInfo/source/Queue.pbi	87cbb88081e6aa
+544	708	6394812081877892	C:/Users/quan/Desktop/Fresher FPT/2.Embedded/3.Assignment/Mock Project/QuanNB1_ Mock 2/QuanNB1_ Mock 2/project/Debug/BrowseInfo/source/Srec.pbi	c8223e5b7f798254
